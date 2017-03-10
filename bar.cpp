@@ -2,9 +2,9 @@
 
 int bar(int a,int b){ 
 
-return a+b; 
+return a*b; 
 } 
 TEST_CASE("bar","[bar]"){ 
-REQUIRE( bar(1,2) == 3 ); 
-REQUIRE_FALSE( bar(2,3) == 4 ); 
+REQUIRE( bar(1,2) == 2 ); 
+REQUIRE( bar(2,3) == 6 );
 }
